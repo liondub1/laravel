@@ -11,7 +11,6 @@ return Application::configure(basePath: dirname(__DIR__))
         health: '/up',
     )
     ->withMiddleware(function (Middleware $middleware) {
-        middleware) {
         $middleware->trustProxies(at: [
             '173.245.48.0/20',
             '103.21.244.0/22',
